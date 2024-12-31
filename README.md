@@ -31,3 +31,5 @@ ___
 
 The developer test account is https://app.hubspot.com/settings/23737432/.
 
+You'll need to create a .env and put the token in it.  I accedentially had a token in an old commit, I revoked it so it no longer works.
+
