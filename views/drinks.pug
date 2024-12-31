@@ -1,0 +1,18 @@
+doctype html
+html 
+    head 
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body    
+        h1 Drinks
+        .cards 
+            each drink in data
+                .card 
+                    h2.card__name #{drink.properties.drink_name}
+                    p.card__subitem 
+                    strong Base Spirit: 
+                    | #{drink.properties.base_spirit}
+                    p.card__subitem 
+                    strong Garnish: 
+                    | #{drink.properties.garnish}

@@ -1,0 +1,21 @@
+doctype html
+html
+    head 
+        title= title
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body    
+        h1 Drinks
+        a(href="/update-cobj") Update or Add To This Table
+        table
+            thead
+                tr
+                    th Drink Name
+                    th Base Spirit
+                    th Garnish
+            tbody
+                each drink in data
+                    tr
+                        td #{drink.properties.drink_name}
+                        td #{drink.properties.base_spirit}
+                        td #{drink.properties.garnish}

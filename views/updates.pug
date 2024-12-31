@@ -1,0 +1,36 @@
+doctype html
+html
+    head 
+        title= title
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        h1 Add New Drink
+
+        form(action="update-cobj" method="post")
+            label(for="drink_name") Drink Name:
+            input(type="text" id="drink_name" name="drink_name" required)
+
+            label(for="base_spirit") Base Spirit:
+            select(id="base_spirit" name="base_spirit" required)
+                option(value="Vodka") Vodka
+                option(value="Gin") Gin
+                option(value="Rum") Rum
+                option(value="Whiskey") Whiskey
+                option(value="Tequila") Tequila
+                optoin(value="Brandy") Brandy
+
+
+            label(for="garnish") Garnish:
+            select(id="garnish" name="garnish" required)
+                option(value="Lime") Lime
+                option(value="Lemon") Lemon
+                option(value="Orange") Orange
+                option(value="Olive") Olive
+                option(value="Cherry") Cherry
+                option(value="Pickle") Pickle
+                option(value="Ice") Ice
+
+            button(type="submit") Add Drink
+        
+        a(href="/") Back to Home
